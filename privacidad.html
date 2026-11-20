@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Política de privacidad de Buzón</h1>
-<p class="muted">Última actualización: 20 de noviembre de 2026 (v1: organizar y enviar correo)</p>
+<p class="muted">Última actualización: 20 de noviembre de 2026 (conexiones opcionales con Home Assistant y Claude)</p>
 
 <h2>Quién la usa</h2>
 <p>Buzón es una aplicación de escritorio para macOS que usa una sola persona, su autor, para leer y gestionar su propia cuenta de Gmail. No se ofrece al público.</p>
@@ -29,6 +29,14 @@
 <h2>Con quién se comparten</h2>
 <p>Con nadie. Buzón no envía el contenido del correo a ningún servidor del desarrollador ni de terceros, no usa publicidad, analítica ni seguimiento, no vende ni transfiere datos y no usa los datos de Google para entrenar modelos de inteligencia artificial. El uso de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, incluidos los requisitos de uso limitado.</p>
 
+<h2>Conexiones opcionales con servicios del propio usuario</h2>
+<p>Están apagadas por defecto y solo funcionan si el usuario las enciende. Ninguna va a servidores del desarrollador ni de terceros: van a sistemas que el propio usuario tiene y controla.</p>
+<ul>
+<li><strong>Home Assistant</strong> (su domótica): Buzón envía solo números, valores sí/no y fechas (por ejemplo, cuántos correos esperan respuesta o cuándo vence la próxima factura). No envía nombres, asuntos, direcciones ni texto de correos; los nombres de sus etiquetas, solo si lo elige.</li>
+<li><strong>«Encárgate de esto»</strong>: cuando el usuario lo pide en un correo concreto y confirma tras ver una vista previa exacta, Buzón envía a su propio panel personal una nota con su instrucción y, de ese correo, el remitente, el asunto, la fecha y un extracto corto, para que un asistente de IA (Claude, con la cuenta del propio usuario) haga lo que él pide. El correo va marcado como datos y no como instrucciones. No hay envíos automáticos.</li>
+</ul>
+<p>Los datos de Google no se usan para entrenar modelos de inteligencia artificial.</p>
+
 <h2>Cómo borrarlos</h2>
 <p>Desde Ajustes → Cuenta → «Desconectar», Buzón borra la copia local y el acceso guardado en el Llavero. El acceso también se puede retirar en cualquier momento en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
@@ -36,6 +44,6 @@
 <p>Para cualquier pregunta, abre una incidencia en <a href="https://github.com/Yack95228/buzon/issues">github.com/Yack95228/buzon/issues</a>.</p>
 
 <hr>
-<p lang="en" class="muted">Buzón is a single-user desktop app. With the Gmail <code>gmail.modify</code> scope it stores the owner's mail only on the owner's Mac and OAuth tokens in the macOS Keychain. It archives, labels, moves to trash, saves drafts and sends mail only when the owner presses a button or key for it, and never deletes mail permanently. Nothing is sent to any server of the developer or of third parties, there is no advertising, analytics or sale of data, and Google user data is not used to train AI models; use of Google API data follows the Google API Services User Data Policy, including the Limited Use requirements.</p>
+<p lang="en" class="muted">Buzón is a single-user desktop app. With the Gmail <code>gmail.modify</code> scope it stores the owner's mail only on the owner's Mac and OAuth tokens in the macOS Keychain. It archives, labels, moves to trash, saves drafts and sends mail only when the owner presses a button or key for it, and never deletes mail permanently. Optional, off-by-default connections send only counts and dates to the owner's own Home Assistant, and, only when the owner confirms for one mail, a note with his instruction and that mail's sender, subject, date and a short excerpt to his own dashboard for his own AI assistant. Nothing is sent to any server of the developer or of third parties, there is no advertising, analytics or sale of data, and Google user data is not used to train AI models; use of Google API data follows the Google API Services User Data Policy, including the Limited Use requirements.</p>
 </body>
 </html>
