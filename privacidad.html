@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Política de privacidad de Buzón</h1>
-<p class="muted">Última actualización: 20 de noviembre de 2026 (conexiones opcionales con Home Assistant y Claude)</p>
+<p class="muted">Última actualización: 20 de noviembre de 2026 (imágenes sin preguntar, salvo rastreadores)</p>
 
 <h2>Quién la usa</h2>
 <p>Buzón es una aplicación de escritorio para macOS que usa una sola persona, su autor, para leer y gestionar su propia cuenta de Gmail. No se ofrece al público.</p>
@@ -28,6 +28,9 @@
 
 <h2>Con quién se comparten</h2>
 <p>Con nadie, salvo lo que el usuario envía expresamente con «Encárgate de esto» (más abajo). Buzón no envía el contenido del correo a ningún servidor del desarrollador ni de terceros, no usa publicidad, analítica ni seguimiento, no vende ni transfiere datos y no usa los datos de Google para entrenar modelos de inteligencia artificial. El uso de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, incluidos los requisitos de uso limitado.</p>
+
+<h2>Imágenes de los correos</h2>
+<p>Por elección del usuario, Buzón muestra las imágenes de los correos sin preguntar, como hace Gmail. Las descarga la propia app, con límites de tamaño y tipo, solo por https, sin cookies y sin indicar desde dónde se piden. Aun así, cargar una imagen desde el servidor de quien envió el correo le permite saber cuándo se abrió y la dirección IP de conexión. Las imágenes que parecen rastreadores (servicios de seguimiento conocidos, imágenes de uno o dos píxeles u ocultas) se bloquean. En los ajustes se puede volver a bloquear todas las imágenes salvo las de remitentes permitidos.</p>
 
 <h2>Conexiones opcionales con servicios del propio usuario</h2>
 <p>Están apagadas por defecto y solo funcionan si el usuario las enciende. Van a sistemas del propio usuario, nunca a servidores del desarrollador.</p>
@@ -44,6 +47,6 @@
 <p>Para cualquier pregunta, abre una incidencia en <a href="https://github.com/Yack95228/buzon/issues">github.com/Yack95228/buzon/issues</a>.</p>
 
 <hr>
-<p lang="en" class="muted">Buzón is a single-user desktop app. With the Gmail <code>gmail.modify</code> scope it stores the owner's mail only on the owner's Mac and OAuth tokens in the macOS Keychain. It archives, labels, moves to trash, saves drafts and sends mail only when the owner presses a button or key for it, and never deletes mail permanently. Optional, off-by-default connections send only counts and dates to the owner's own Home Assistant, and, only when the owner confirms for one mail, a note with his instruction and that mail's sender, subject, date and a short excerpt to his own dashboard, where his own AI assistant (Anthropic's Claude, under his account) processes it. Nothing else is sent to any server of the developer or of third parties, there is no advertising, analytics or sale of data, and Google user data is not used to train AI models; use of Google API data follows the Google API Services User Data Policy, including the Limited Use requirements.</p>
+<p lang="en" class="muted">Buzón is a single-user desktop app. With the Gmail <code>gmail.modify</code> scope it stores the owner's mail only on the owner's Mac and OAuth tokens in the macOS Keychain. It archives, labels, moves to trash, saves drafts and sends mail only when the owner presses a button or key for it, and never deletes mail permanently. By the owner's choice, images in mail load automatically through the app (https only, no cookies), which lets a sender see when a mail was opened and from which IP address; known tracking pixels are blocked, and blocking all images is a setting. Optional, off-by-default connections send only counts and dates to the owner's own Home Assistant, and, only when the owner confirms for one mail, a note with his instruction and that mail's sender, subject, date and a short excerpt to his own dashboard, where his own AI assistant (Anthropic's Claude, under his account) processes it. Nothing else is sent to any server of the developer or of third parties, there is no advertising, analytics or sale of data, and Google user data is not used to train AI models; use of Google API data follows the Google API Services User Data Policy, including the Limited Use requirements.</p>
 </body>
 </html>
